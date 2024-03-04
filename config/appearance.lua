@@ -7,23 +7,23 @@ return {
   max_fps = 60,
   front_end = 'WebGpu',
   webgpu_power_preference = 'HighPerformance',
-  webgpu_preferred_adapter = gpu_adapters:pick(),
+  -- webgpu_preferred_adapter = gpu_adapters:pick(),
 
   -- color scheme
   colors = colors,
 
   -- background
-  background = {
-    {
-      source = { File = wezterm.GLOBAL.background },
-    },
-    {
-      source = { Color = colors.background },
-      height = '100%',
-      width = '100%',
-      opacity = 0.96,
-    },
-  },
+  -- background = {
+  --   {
+  --     source = { File = wezterm.GLOBAL.background },
+  --   },
+  --   {
+  --     source = { Color = colors.background },
+  --     height = '100%',
+  --     width = '100%',
+  --     opacity = 0.96,
+  --   },
+  -- },
 
   -- scrollbar
   enable_scroll_bar = true,
